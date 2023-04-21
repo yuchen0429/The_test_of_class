@@ -1,0 +1,50 @@
+﻿<html>
+<body >
+  <input type="radio" id="r1" name="W" checked="true" onclick="changeImg()">W/L 300/1000 <br>
+  <input type="radio" id="r2" name="W" onclick="changeImg()">W/L  600/1000 <br>
+  <input type="radio" id="r3" name="W" onclick="changeImg()" >W/L  1200/1000 <br>
+  <text x="0" y="15" fill="red">I love 110316115!</text>
+  
+  <div style="position: relative;">
+     <img id="img1" src="https://janstockcoin.com/wp-content/uploads/2021/06/pexels-photo-747964-scaled.jpeg"
+  width="799" height="1019"
+          style="position: absolute;  left: 0px; top:0px; z-index: 1;" />
+     <svg width="799" height="1019"
+          style="position: absolute;  left: 0px; top:0px; z-index: 2;" >
+          <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+        <circle cx="260" cy="200" r="60" stroke="blue" stroke-width="7" fill="none" />
+     <rect width="300" height="100" style="fill:rgb(252, 251, 251);stroke-width:3;stroke:rgb(252, 251, 251)" />
+     <ellipse cx="200" cy="80" rx="100" ry="50"
+  style="fill:yellow;stroke:purple;stroke-width:2" />
+    </svg>>
+  </div>
+</body>
+    <script type="text/javascript">
+    
+    function changeImg() { 
+    //  jpgDir/300-1000.PNG" 
+
+      //  alert("aaa");
+        if (document.getElementById("r1").checked == true) {
+                document.getElementById("img1").src = "https://janstockcoin.com/wp-content/uploads/2021/06/pexels-photo-747964-scaled.jpeg" 
+                document.getElementById("img1").height="1000"
+                document.getElementById("img1").width="300"
+            }
+
+        if (document.getElementById("r2").checked == true) {
+                document.getElementById("img1").src = "https://janstockcoin.com/wp-content/uploads/2021/06/pexels-photo-747964-scaled.jpeg" 
+                document.getElementById("img1").height="1000"
+                document.getElementById("img1").width="600"
+            }
+
+        if (document.getElementById("r3").checked == true) {
+                document.getElementById("img1").src = "https://janstockcoin.com/wp-content/uploads/2021/06/pexels-photo-747964-scaled.jpeg" 
+                document.getElementById("img1").height="1000"
+                document.getElementById("img1").width="1200"
+            }  
+
+        }        
+
+    </script>
+
+</html>
